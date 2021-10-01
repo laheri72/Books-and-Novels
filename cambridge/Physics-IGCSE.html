@@ -11,5 +11,29 @@
       <iframe src="https://drive.google.com/file/d/1DBJwZvlq0x4fIrX1DkXRTFkMyVr-5zor/preview"   width="100%" height="485px" frameborder="0" scrolling="no" seamless=""></iframe>
       <div style="width: 80px; height: 80px; position: absolute; opacity: 0; right: 0px; top: 0px;"> </div>
 </div>
+	
+	<button onclick="makeFullScreen()">Make Full Screen</button>
+	
+	
 </body>
+	<script>function requestFullScreen(element) {
+    // Supports most browsers and their versions.
+    var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
+
+    if (requestMethod) { // Native full screen.
+        requestMethod.call(element);
+    } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+}
+
+function makeFullScreen() {
+    document.getElementsByTagName("iframe")[0].className = "fullScreen";
+    var elem = document.body;
+    requestFullScreen(elem);
+}
+		</script>
 </html>
