@@ -137,6 +137,7 @@
 </div>
 
 
+
 <script>/**
  * Crypto JS 3.1.9-1
  * Copied as is from https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js
@@ -278,7 +279,6 @@
                  * Copies properties into this object.
                  *
                  * @param {Object} properties The properties to mix in.
-
                  *
                  * @example
                  *
@@ -641,6 +641,7 @@
                 return Latin1.parse(unescape(encodeURIComponent(utf8Str)));
             }
         };
+
 
         /**
          * Abstract buffered block algorithm template.
@@ -2761,6 +2762,7 @@
                 x = newX;
                 y = newY;
             }
+
 
             // Compute pi index constants
             for (var x = 0; x < 5; x++) {
@@ -5384,6 +5386,7 @@
                 exchangeLR.call(this, 4,  0x0f0f0f0f);
                 exchangeLR.call(this, 16, 0x0000ffff);
                 exchangeRL.call(this, 2,  0x33333333);
+
                 exchangeRL.call(this, 8,  0x00ff00ff);
                 exchangeLR.call(this, 1,  0x55555555);
 
@@ -6162,7 +6165,7 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = 'ca15095b34f495512b380e7d84f92c55b4833f12820fe082a5711b575671a65bd06ff5ad8fe29b8f7119070d6c1c570d5bc5ce3db1feb3c141f4ae46cd3e7d92Aj+NMW62A7dKJvICTvfSiPI7DjLYsQs3e2JpYrT36Pl25++PjG4ls/OMOvEshXwo6/7Oapl61dJNJ1JrvH3owo5nEL2Ztf8abpgOIy2jIQCxOGIMk8iN+Tt/Rb4MiIJUeg9WGq6psIojF/ixvFyIqCypjZXM+XexckHW3hLcV37E+uapnhzYkDKwvQLPSGkNk85dVWTKUqyM5b4hJBmLgg+zCp0AdmNOdBPjgkoIXP2EEgg65Ffh++9tcRLoBrL4whJqLSOPAHHPJYrqGwxsXBq7qhUaWP5WEHIAxIFST8TCquZOty6LA7nWsvUrZHD6',
+            encryptedMsg = '71f8e28386691d2d5f78d59c30b3e8aa737b5227d20000f81891aa5bf9748407a69e20e467f8ac5da48f529d70d879b1c4ed8ef39fb672b56ee8307f361307d1G29TzCdzb0D4+QC0LTHYPXBeGjMSUi8Y364XznK9h2EDWnmqJf8yPdFJPZmWNICzjy6FLk1HXC4vfG41oDILuXBoL8COZxea1De7hulS9lD3uTIZO2F9GTLWhihjpU/xaZ5B8HeLwZLKC2U/kG7OHs8G4HJu42XKtyEB5WRLwRn6DNaHB6q+avRUham8yvMI906to1QCcakAC50BZlX9GTd+hc8MO7q6rK3g+PfMa5w4BRXQBH5iphmy3xsXexnlKK2YQ7YM7+qvCkYPUHUAUA==',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
