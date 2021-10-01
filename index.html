@@ -1,8 +1,6 @@
 <!doctype html>
 <html class="staticrypt-html">
 <head>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5283311725796182"
-     crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <title>Protected Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -137,7 +135,6 @@
     </div>
 
 </div>
-
 
 
 <script>/**
@@ -281,6 +278,7 @@
                  * Copies properties into this object.
                  *
                  * @param {Object} properties The properties to mix in.
+
                  *
                  * @example
                  *
@@ -1316,7 +1314,6 @@
                     if (i < 20) {
                         t += ((b & c) | (~b & d)) + 0x5a827999;
                     } else if (i < 40) {
-
                         t += (b ^ c ^ d) + 0x6ed9eba1;
                     } else if (i < 60) {
                         t += ((b & c) | (b & d) | (c & d)) - 0x70e44324;
@@ -3823,7 +3820,6 @@
              *
              * @example
              *
-
              *     CryptoJS.pad.Pkcs7.unpad(wordArray);
              */
             unpad: function (data) {
@@ -5995,7 +5991,6 @@
                     var IV_1 = IV[1];
 
                     // Generate four subvectors
-
                     var i0 = (((IV_0 << 8) | (IV_0 >>> 24)) & 0x00ff00ff) | (((IV_0 << 24) | (IV_0 >>> 8)) & 0xff00ff00);
                     var i2 = (((IV_1 << 8) | (IV_1 >>> 24)) & 0x00ff00ff) | (((IV_1 << 24) | (IV_1 >>> 8)) & 0xff00ff00);
                     var i1 = (i0 >>> 16) | (i2 & 0xffff0000);
@@ -6167,7 +6162,7 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = 'ff60a7b8c535d842e6b116d54cb541d8f40fd4b35d681be3425b51fc1ef38d35d48f6dfd3d56ed44bf4123bcb72d8456a0d087d7c890c238b35904adb86ce37eZPUVH/XlKHJ0ISpfVwoA+kv9Upg4Ny3LJgiktFe7OEUkg9tlSPD/4EUr4+ud2Xyq3Wx+tNrt07czqhU7xTIPf9jKzu7TnC80WXRg1QQJNPGwzrnI2TNgxtDSeQaFvZQqwz+z/kb+DXT9m1C5xaKazE3kt/cJiItfqL50c214ikTJ6zdRatAbVr/OO8T/jBLLV4A85bxf+p1ajbKJ415bj2ylVsqFt3kJDsL/QSICTVlHCpTi8nvnadEy3mN2mPDrocbIy45+1Kmf+qv6CMqBLyyzeZEZMsN6R5aY/ri7zTpxwe/oxJZLGFvtbuRs0WxDqCV4EX4TwwtZSXzOUq4fNAWtRt5ftNcHiefhvdFJ99K8yVOVEgxX+P8Ft0kKAOUh',
+            encryptedMsg = 'ca15095b34f495512b380e7d84f92c55b4833f12820fe082a5711b575671a65bd06ff5ad8fe29b8f7119070d6c1c570d5bc5ce3db1feb3c141f4ae46cd3e7d92Aj+NMW62A7dKJvICTvfSiPI7DjLYsQs3e2JpYrT36Pl25++PjG4ls/OMOvEshXwo6/7Oapl61dJNJ1JrvH3owo5nEL2Ztf8abpgOIy2jIQCxOGIMk8iN+Tt/Rb4MiIJUeg9WGq6psIojF/ixvFyIqCypjZXM+XexckHW3hLcV37E+uapnhzYkDKwvQLPSGkNk85dVWTKUqyM5b4hJBmLgg+zCp0AdmNOdBPjgkoIXP2EEgg65Ffh++9tcRLoBrL4whJqLSOPAHHPJYrqGwxsXBq7qhUaWP5WEHIAxIFST8TCquZOty6LA7nWsvUrZHD6',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
