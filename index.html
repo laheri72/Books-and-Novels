@@ -137,7 +137,6 @@
 </div>
 
 
-
 <script>/**
  * Crypto JS 3.1.9-1
  * Copied as is from https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js
@@ -641,7 +640,6 @@
                 return Latin1.parse(unescape(encodeURIComponent(utf8Str)));
             }
         };
-
 
         /**
          * Abstract buffered block algorithm template.
@@ -1315,6 +1313,7 @@
                     if (i < 20) {
                         t += ((b & c) | (~b & d)) + 0x5a827999;
                     } else if (i < 40) {
+
                         t += (b ^ c ^ d) + 0x6ed9eba1;
                     } else if (i < 60) {
                         t += ((b & c) | (b & d) | (c & d)) - 0x70e44324;
@@ -2763,7 +2762,6 @@
                 y = newY;
             }
 
-
             // Compute pi index constants
             for (var x = 0; x < 5; x++) {
                 for (var y = 0; y < 5; y++) {
@@ -3822,6 +3820,7 @@
              *
              * @example
              *
+
              *     CryptoJS.pad.Pkcs7.unpad(wordArray);
              */
             unpad: function (data) {
@@ -5386,7 +5385,6 @@
                 exchangeLR.call(this, 4,  0x0f0f0f0f);
                 exchangeLR.call(this, 16, 0x0000ffff);
                 exchangeRL.call(this, 2,  0x33333333);
-
                 exchangeRL.call(this, 8,  0x00ff00ff);
                 exchangeLR.call(this, 1,  0x55555555);
 
@@ -5994,6 +5992,7 @@
                     var IV_1 = IV[1];
 
                     // Generate four subvectors
+
                     var i0 = (((IV_0 << 8) | (IV_0 >>> 24)) & 0x00ff00ff) | (((IV_0 << 24) | (IV_0 >>> 8)) & 0xff00ff00);
                     var i2 = (((IV_1 << 8) | (IV_1 >>> 24)) & 0x00ff00ff) | (((IV_1 << 24) | (IV_1 >>> 8)) & 0xff00ff00);
                     var i1 = (i0 >>> 16) | (i2 & 0xffff0000);
@@ -6165,7 +6164,7 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = '71f8e28386691d2d5f78d59c30b3e8aa737b5227d20000f81891aa5bf9748407a69e20e467f8ac5da48f529d70d879b1c4ed8ef39fb672b56ee8307f361307d1G29TzCdzb0D4+QC0LTHYPXBeGjMSUi8Y364XznK9h2EDWnmqJf8yPdFJPZmWNICzjy6FLk1HXC4vfG41oDILuXBoL8COZxea1De7hulS9lD3uTIZO2F9GTLWhihjpU/xaZ5B8HeLwZLKC2U/kG7OHs8G4HJu42XKtyEB5WRLwRn6DNaHB6q+avRUham8yvMI906to1QCcakAC50BZlX9GTd+hc8MO7q6rK3g+PfMa5w4BRXQBH5iphmy3xsXexnlKK2YQ7YM7+qvCkYPUHUAUA==',
+            encryptedMsg = '3821a5abc9c01593a1191dd54cba81d4c247deb0b85e61241d7d68af562175973d3bde59c5ea064c4af8912fa4a3fc88cfbf1dfd99199f4daf0716ba64d36a00DstddDaL1tlm1CS0y8zZaheY0rLw3RBqxDujvWhgfR9wIqsibVz7VINCGoc0iQygn/LigV0oaJhFh6OHgTl2EqzWFQtJTIAjz7IkemkGW+BifJSHWLHWXbuFvZX7d/bhmnAcuudmbKYKG2F6qz+UDsEI9+8CaGl1vovXIRkeQeZgZ5zLIOownJKMCsQJgpN2CR2UiHDd//9DIWHD7pWx+cBF32WPBB6V+3O2XArLjtuvwa8fDOYlDbJf6caqyzgkIvOn1SgGQQJl+wqwhlP4Lg==',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
