@@ -7,7 +7,10 @@ body{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background: linear-gradient(to right, #228b22, #00008b);
+	background: radial-gradient(#228b22, #00008b)fixed;
+        backgound-repeat: no repeat;
+        background-size: cover;
+        background-position: centre;
 }
 .elements div{
 	position: absolute;
