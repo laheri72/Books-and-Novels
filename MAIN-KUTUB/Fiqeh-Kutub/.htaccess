@@ -1,6 +1,7 @@
 RewriteEngine on
 
 
+
 RewriteCond %{REQUEST_FILENAME} !-d
 
 
