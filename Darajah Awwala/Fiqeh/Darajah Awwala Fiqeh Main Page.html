@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Darajah Awwala Fiqeh</title>
+	
+	<style>
+		div{
+			width: 890px;
+			margin: 0px 0px 0px 0px
+				
+		}
+		.title{color: black}
+		
+		
+		body{
+			
+			color: black
+		}
+		
+			
+		
+		a:link
+		{text-decoration: none;
+			color: white
+		}
+		
+		.transbox1 {
+			 margin-top: 100px  ;
+			 border-radius: 25px;
+             border: 3px solid black;
+			 height: 230px;
+			
+		     }
+
+		
+		.card{
+			
+		}
+		form{
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  
+  margin: 0px 0px 0px 400px;
+}
+	
+		 p  {
+			text-align: center;
+			
+		}
+		
+	 h1  , h4  {
+			text-align: center;
+			
+		}
+		
+		
+			iframe
+		{float: left;
+			width: 450px
+		}
+		
+		button{
+			
+			height: 70px;
+			width: 150px;
+			background-color: lightcoral;
+			border: solid black;
+			border-radius: 30px;
+		    margin: 0px 100px 0px 140px
+		}
+		
+		.transbox2 {
+			 margin-top: 20px  ;
+			 border-radius: 25px;
+             border: 3px solid black;
+			 height: 230px;
+			
+		     }
+	</style>
+	
+</head>
+
+<body>
+	
+	<a style="float: right"  href="mailto:kunuz.notes.xyz@gmail.com?subject=mail for Darajah Awwala Akhbar" ><button style="width: 90px ; height: 50px">Suggest a Note ?</button></a>
+	
+	<h1><strong><b>Fiqeh Notes</b></strong></h1>
+	
+	<div class="main">
+  <form class="searchbox">
+    <input style="width: 300px ; height: 40px" class="searchbar" type="text" placeholder="Search.." name="search">
+  </form>
+
+  <section class="card">
+	  
+	  
+	  <div class="card">
+		   <div class="transbox1">
+	<iframe src=""  frameborder="0" scrolling="no" seamless height="100%"></iframe> 
+  <p  class="title"  >Sharh-ul-Akhbar<br><br>
+      Juzz : 1<br><br>
+   Riwayat Dabt</p>
+  <a href=""><button>Full Screen</button></a>
+  </div></div>
+	  
+	  
+	  <div class="card">
+		   <div class="transbox2">
+	<iframe src=""  frameborder="0" scrolling="no" seamless height="100%"></iframe> 
+  <p  class="title"  >Sharh-ul-Akhbar<br><br>
+      Juzz : 1<br><br>
+   All Mind Maps</p>
+  <a href=""><button>Full Screen</button></a>
+  </div></div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  </section>
+</div>
+	
+	
+	
+	
+	
+	
+	<script>
+	const searchEl = document.querySelector('.searchbox');
+const x = document.querySelectorAll('.card p:nth-child(2)');
+
+function search(e){
+  x.forEach((item,index) => {
+    if(!item.innerHTML.toLowerCase().includes(e.target.value)){
+      item.parentElement.style.display = 'none';
+    }else {
+      item.parentElement.style.display = 'block';
+    }
+  })
+}
+
+searchEl.addEventListener("keyup", search);   
+	</script>
+</body>
+</html>
