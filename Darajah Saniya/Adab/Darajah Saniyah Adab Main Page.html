@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Darajah Saniyah Adab</title>
+	
+	<style>
+		.background{
+			
+			background-image: url("../../wall-g012339541_1280.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover
+		
+		}
+		div{
+			width: 890px;}
+		
+			
+			
+				
+		
+		.title{color: black}
+		
+		a:link
+		{text-decoration: none;
+			color: white
+		}
+		
+		.transbox1 {
+			 margin-top: 100px  ;
+			 border-radius: 25px;
+             border: 5px solid black;
+			 height: 230px;
+			
+			
+		     }
+
+		
+		.card{
+			
+		}
+		form{
+			border-radius: 25px;
+			width: 500px;
+			margin-left: auto;
+			margin-right: auto
+		}
+		
+
+		input{
+			border-radius: 25px;
+			width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+			height: 30px
+			
+		}
+	
+		.title{
+			color: white
+		}
+		
+		 p  {
+			text-align: center;
+			
+		}
+		
+	 h1   {
+			text-align: center;
+		 color: white
+			
+		}
+		
+		iframe
+		{float: left;
+			width: 450px
+		}
+		
+		button{
+			
+			height: 70px;
+			width: 150px;
+			background-color: darkblue;
+			border: solid black;
+			border-radius: 30px;
+		    margin: 0px 100px 0px 140px;
+			color: white
+				
+		}
+		
+		.transbox2 {
+			 margin-top: 20px  ;
+			 border-radius: 25px;
+             border: 5px solid black;
+			 height: 230px;
+			
+		     }
+	</style>
+	
+</head>
+
+<body  class="background">
+	
+	<a style="float: right"  href="mailto:kunuz.notes.xyz@gmail.com?subject=mail for Darajah Saniyah Adab" ><button style="width: 90px ; height: 50px">Suggest a Note ?</button></a>
+	
+	<h1><strong><b>Saniyah Adab Notes</b></strong></h1>
+	
+	<div class="main">
+  <form class="searchbox">
+    <input class="searchbar" type="text" placeholder="search..." name="search">
+  </form>
+
+  <section class="card">
+	  
+	  
+	 
+	  
+	  
+	  
+	  
+	  
+	  
+	  </section>
+</div>
+	
+	
+	
+	
+	
+	
+	<script>
+	const searchEl = document.querySelector('.searchbox');
+const x = document.querySelectorAll('.card p:nth-child(2)');
+
+function search(e){
+  x.forEach((item,index) => {
+    if(!item.innerHTML.toLowerCase().includes(e.target.value)){
+      item.parentElement.style.display = 'none';
+    }else {
+      item.parentElement.style.display = 'block';
+    }
+  })
+}
+
+searchEl.addEventListener("keyup", search);   
+	</script>
+</body>
+</html>
