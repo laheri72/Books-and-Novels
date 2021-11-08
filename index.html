@@ -405,6 +405,12 @@ body {
 	</head>
 	<body>
 		
+<<<<<<< Updated upstream
+=======
+		
+ <a href="Home-Page.html" ><h1 style=" padding-top: 50px ; padding-bottom: 50px ; color: white ; font-size: 3em ; font-style: italic ; font-style: oblique" class="foldername "><strong><b>WELCOME</b></strong></h1>
+		
+>>>>>>> Stashed changes
 <div class="stars">
   <div class="star"></div>
   <div class="star"></div>
@@ -466,4 +472,15 @@ body {
 	WELCOME
 	</a>
 </body>
+	<script>
+ if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+     }).catch(function(err) {
+        console.log("No it didn't. This happened:", err)
+    });
+ }
+</script>
 </html>
