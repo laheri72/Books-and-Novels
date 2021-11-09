@@ -1,15 +1,52 @@
 {
-  "short_name": "Zino UI",
-  "name": "Zino UI - a jQuery components library",
+  "name": "FreeCodeCamp",
+  "short_name": "FreeCodeCamp",
+  "theme_color": "#00FF00",
+  "background_color": "#00FF00",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
   "icons": [
     {
-      "src": "https://static.zinoui.com/img/logos/icon-144x144.png",
-      "type": "image/png",
-      "sizes": "144x144"
+      "src": "Kunuz Icon.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "Kunuz Icon.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "Kunuz Icon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "Kunuz Icon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "Kunuz Icon.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "Kunuz Icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "Kunuz Icon.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "Kunuz Icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
-  "background_color": "#FFFFFF",
-  "theme_color": "#67BCFF",
-  "display": "standalone",
-  "start_url": "https://kunuz.xyz/"
+  "splash_pages": null
 }
