@@ -1,7 +1,1 @@
-if ("serviceWorker" in navigator) {
-    window.addEventListener("load", function () {
-        navigator.serviceWorker.register("/service-worker.js");
-    });
-}
-
-// JavaScript Document
+ self.addEventListener('fetch',() => console.log("fetch"));
