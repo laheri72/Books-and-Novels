@@ -1,1 +1,1 @@
-ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production, registrationStrategy: 'registerImmediately' }),
+ self.addEventListener('fetch',() => console.log("fetch"));
