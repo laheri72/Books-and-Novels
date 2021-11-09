@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en"> 
 <head>
-	
+	<link rel="manifest" href="manifest.json">
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5283311725796182"
      crossorigin="anonymous"></script>
 	
@@ -11,8 +11,9 @@
 	<style>
 		
 		body {
-  background-repeat: no-repeat;
-  background-image: url("books-gcb27c92de_1920.jpg"); 
+            background-repeat: no-repeat;
+            background-image: url("books-gcb27c92de_1920.jpg"); 
+			
 }
 
 /* For device width 400px and larger: */
@@ -26,8 +27,10 @@
 		.bg
 		{ 
 		background-image: url("books-gcb27c92de_1920.jpg");
-		background-position: center center;
+		background-position:center center;
 		background-repeat: no-repeat;
+		
+	    
 		
 			
 		}
@@ -67,7 +70,7 @@
 		}
 		
 		
-		
+
 		
 		
 	</style>
@@ -81,6 +84,7 @@
 </head>
 
 <body >
+
 	
 	
 	
@@ -101,18 +105,21 @@
 		
 
 
-		<a href= "BOOKS-NOVELS/Books-Novels_Main page.html"><h1 style=" padding-top: 50px ; padding-bottom: 50px " class="foldername "><strong><b>Books/Novels</b></strong></h1></a>
+		<a href= "BOOKS-NOVELS/Books-Novel_Advanced.html"><h1 style=" padding-top: 50px ; padding-bottom: 50px " class="foldername "><strong><b>Books/Novels</b></strong></h1></a>
 
 		
 		</div>
 	</div>
-	<a  href="example.html">New Look Of Books</a>
 	
+	<script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+</script>
 	
-
-
 
 	
 </body>
-
 </html>
