@@ -6,7 +6,7 @@
     "start_url": "/",
     "name": "Mustafa",
     "short_name": "mustafa",
-    "offline_enabled": true ,
+    
 	"icons": [
         {
             "src": "/icon-192x192.png",
