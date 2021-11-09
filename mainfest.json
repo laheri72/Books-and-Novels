@@ -3,7 +3,7 @@
     "background_color": "#f69435",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/",
+    "start_url": "/Home-Page.html",
     "name": "Mustafa",
     "short_name": "mustafa",
     "offline_enabled": true ,
