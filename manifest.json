@@ -11,5 +11,5 @@
   "background_color": "#FFFFFF",
   "theme_color": "#67BCFF",
   "display": "standalone",
-  "start_url": "/?utm_source=homescreen"
+  "start_url": "https://kunuz.xyz/"
 }
