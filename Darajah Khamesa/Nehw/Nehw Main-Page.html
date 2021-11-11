@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Darajah Khamesa Nehw</title>
+	
+	<style>
+		
+		div{
+			width: 890px;
+			margin: 0px 0px 0px 0px
+				
+		}
+		.title{color: black}
+		
+		
+		body{
+			
+			color: black
+		}
+		
+			
+		
+		a:link
+		{text-decoration: none;
+			color: white
+		}
+		
+		.transbox1 {
+			 margin-top: 100px  ;
+			 border-radius: 25px;
+             border: 3px solid black;
+			 height: 230px;
+			
+		     }
+
+		
+		.card{
+			
+		}
+		form{
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  
+  margin: 0px 0px 0px 400px;
+}
+	
+		 p  {
+			text-align: center;
+			
+		}
+		
+	 h1  , h4  {
+			text-align: center;
+			
+		}
+		
+		
+			iframe
+		{float: left;
+			width: 450px
+		}
+		
+		button{
+			
+			height: 70px;
+			width: 150px;
+			background-color: lightcoral;
+			border: solid black;
+			border-radius: 30px;
+		    margin: 0px 100px 0px 140px
+		}
+		
+		.transbox2 {
+			 margin-top: 20px  ;
+			 border-radius: 25px;
+             border: 3px solid black;
+			 height: 230px;
+			
+		     }
+	</style>
+	
+</head>
+
+<body>
+	
+	<a style="float: right"  href="mailto:kunuz.notes.xyz@gmail.com?subject=mail for Darajah Khamesa Nehw" ><button style="width: 90px ; height: 50px">Suggest a Note ?</button></a>
+	
+	<h1><strong><b>Nehw Notes</b></strong></h1>
+	
+	<div class="main">
+  <form class="searchbox">
+    <input style="width: 300px ; height: 40px" class="searchbar" type="text" placeholder="Search.." name="search">
+  </form>
+
+  <section class="card">
+	  
+	  
+	  <div class="card">
+		   <div class="transbox1">
+	<iframe src="Nehw.html"  frameborder="0" scrolling="no" seamless height="100%"></iframe> 
+  <p  class="title"  >Nehw<br><br>
+   Nehw</p>
+  <a href="Nehw.html"><button>Full Screen</button></a>
+  </div></div>
+	  
+	  
+	  
+	  
+	  <div class="card">
+		   <div class="transbox1">
+	<iframe src="Nehw-Sharh-o-miat.html"  frameborder="0" scrolling="no" seamless height="100%"></iframe> 
+  <p  class="title"  >Nehw<br><br>
+			  Nehw-Sharh-o-miat</p>
+  <a href="Nehw-Sharh-o-miat.html"><button>Full Screen</button></a>
+  </div></div>
+	  
+	  
+	  
+	  <div class="card">
+		   <div class="transbox1">
+	<iframe src="Taarikh of Jurjaani.html"  frameborder="0" scrolling="no" seamless height="100%"></iframe> 
+			   <p  class="title"  >Nehw<br><br>
+			   Taarikh of Jurjaani</p>
+  <a href="Taarikh of Jurjaani.html"><button>Full Screen</button></a>
+  </div></div>
+	  
+	  
+	  
+	  <div class="card">
+		   <div class="transbox1">
+	<iframe src="Nikaat.html"  frameborder="0" scrolling="no" seamless height="100%"></iframe> 
+			   <p  class="title"  >Nehw<br><br>
+			   Nikaat</p>
+  <a href="Nikaat.html"><button>Full Screen</button></a>
+  </div></div>
+	  
+	  
+	  
+	  </section>
+</div>
+	
+	
+	
+	
+	
+	
+	<script>
+	const searchEl = document.querySelector('.searchbox');
+const x = document.querySelectorAll('.card p:nth-child(2)');
+
+function search(e){
+  x.forEach((item,index) => {
+    if(!item.innerHTML.toLowerCase().includes(e.target.value)){
+      item.parentElement.style.display = 'none';
+    }else {
+      item.parentElement.style.display = 'block';
+    }
+  })
+}
+
+searchEl.addEventListener("keyup", search);   
+	</script>
+</body>
+</html>
