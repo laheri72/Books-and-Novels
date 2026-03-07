@@ -1,0 +1,64 @@
+{
+  "books": [
+    {
+      "id": "freedom",
+      "title": "Freedom",
+      "src": "https://drive.google.com/file/d/1s_4iLtBRUF_jJkteH2-DlKqz4UyB060r/preview",
+      "cover": "assets/book-covers/Freedom.png"
+    },
+    {
+      "id": "harry-potter",
+      "title": "Harry Potter Compiled",
+      "src": "https://drive.google.com/file/d/12MSEq3SZ5Rj1Xpb5mJLNcuPvWj8M4DE2/preview",
+      "cover": "assets/book-covers/Harry Potter.png"
+    },
+    {
+      "id": "inferno",
+      "title": "Inferno",
+      "src": "https://drive.google.com/file/d/1Y3fvsRJnPg61MgwfrlLSle2LmDTMrf8c/preview",
+      "cover": "assets/book-covers/Inferno.png"
+    },
+    {
+      "id": "norwegian-woods",
+      "title": "Norwegian Woods",
+      "src": "https://drive.google.com/file/d/1x5Ua5MgbSq4Km3xjIKagshOpo-Fhsh-2/preview",
+      "cover": "assets/book-covers/Norwegian Woods.png"
+    },
+    {
+      "id": "origin",
+      "title": "Origin",
+      "src": "https://drive.google.com/file/d/1dwJZCJIiex51jg7vhbWq44dyNeMxXM7S/preview",
+      "cover": "assets/book-covers/Origin.png"
+    },
+    {
+      "id": "the-alchemist",
+      "title": "The Alchemist",
+      "src": "https://drive.google.com/file/d/1Ae6sHhLarABm366ClXwuC7MsYpt25ufP/preview",
+      "cover": "assets/book-covers/The Alchemist.png"
+    },
+    {
+      "id": "the-da-vinci-code",
+      "title": "The Da Vinci Code",
+      "src": "https://drive.google.com/file/d/1MQz8QzvlKFQrUfU-XJ6revweY1-esCCZ/preview",
+      "cover": "assets/book-covers/The Da Vinci Code.png"
+    },
+    {
+      "id": "the-firm",
+      "title": "The Firm",
+      "src": "https://drive.google.com/file/d/1gmZYgvF3uB2pXY8HfYz3wzlPO1LY8UYp/preview",
+      "cover": "assets/book-covers/The Firm.png"
+    },
+    {
+      "id": "the-lost-symbol",
+      "title": "The Lost Symbol",
+      "src": "https://drive.google.com/file/d/1lcsEmPGA_mUJCxgUU6JL-HCj2UBmYapC/preview",
+      "cover": "assets/book-covers/The Lost Symbol.png"
+    },
+    {
+      "id": "this-side-of-paradise",
+      "title": "This Side of Paradise",
+      "src": "https://drive.google.com/file/d/1VWdw6j3J9Us9LYOTFFHA6ESqTJrjob_L/preview",
+      "cover": "assets/book-covers/This side of Paradise.png"
+    }
+  ]
+}
