@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { ChevronDown, ChevronRight, Book, GraduationCap, Search, Menu, X } from 'lucide-react';
+import { ChevronDown, ChevronRight, Book, GraduationCap, X } from 'lucide-react';
 import notesData from '../../data/notesIndex.json';
 
 interface SidebarProps {

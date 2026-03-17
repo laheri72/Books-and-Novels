@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
-import { Outlet, useNavigate, Link } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import Sidebar from './Sidebar';
-import { Menu, Search as SearchIcon, X, FileText, Book } from 'lucide-react';
+import { Menu, Search as SearchIcon, FileText, Book } from 'lucide-react';
 import notesData from '../../data/notesIndex.json';
 import booksData from '../../data/booksIndex.json';
 
